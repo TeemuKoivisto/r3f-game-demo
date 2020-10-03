@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { Routes } from './routes';
+
+ReactDOM.render(<Routes />, document.getElementById('root'));
 
 type RequestIdleCallbackHandle = any;
 type RequestIdleCallbackOptions = {

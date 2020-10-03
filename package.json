@@ -2,7 +2,10 @@
   "name": "game",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://teemukoivisto.github.io/r3f-game-demo",
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "init": "confy-core init --env=development",
     "start": "confy-core start --env=development",
     "build": "confy-core build --env=production",
@@ -23,8 +26,10 @@
     "@types/animejs": "^3.1.0",
     "@types/react": "^16.9.23",
     "@types/react-dom": "^16.9.5",
+    "@types/react-router-dom": "^5.1.5",
     "@types/three": "^0.103.2",
     "cross-env": "^7.0.2",
+    "gh-pages": "^3.1.0",
     "react-refresh": "^0.7.2",
     "terser-webpack-plugin": "^2.3.6"
   },
@@ -37,6 +42,7 @@
     "immer": "^6.0.3",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-router-dom": "^5.2.0",
     "react-three-fiber": "^4.2.8",
     "three": "^0.112.1",
     "zustand": "^2.2.3"
