@@ -20,10 +20,14 @@ const styles = {
         align-items: center;
     `,
 };
-
+// For deploying the app to GitHub pages using the "homepage" value from package.json
+const URL_PREFIX =
+    process.env.NODE_ENV === 'production'
+        ? 'https://teemukoivisto.github.io/r3f-game-demo'
+        : '';
 const urls = [
-    ...Object.values(spriteData).map(data => data.src),
-    ...Object.values(soundData).map(data => data.src),
+    ...Object.values(spriteData).map(data => `${URL_PREFIX}${data.src}`),
+    ...Object.values(soundData).map(data => `${URL_PREFIX}${data.src}`),
     // flatten
 ].reduce<string[]>((acc, val) => acc.concat(val), []);
 

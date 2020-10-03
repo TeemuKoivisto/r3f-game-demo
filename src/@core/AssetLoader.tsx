@@ -86,6 +86,8 @@ export default function AssetLoader({ urls: urlsProp, placeholder, children }: P
         (async () => {
             for (const url of uniqueUrls.current) {
                 try {
+                    console.log(url);
+                    console.log(process.env.PUBLIC_URL);
                     const asset = await loadAsset(url);
                     assets.current[url] = asset;
                     if (mounted.current) setCount(current => current + 1);

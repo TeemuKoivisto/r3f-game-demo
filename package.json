@@ -2,10 +2,10 @@
   "name": "game",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://teemukoivisto.github.io/r3f-game-demo",
+  "homepage": "https://teemukoivisto.github.io/r3f-game-demo/",
   "scripts": {
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build",
+    "deploy": "PUBLIC_URL=https://teemukoivisto.github.io/r3f-game-demo/ && gh-pages -d build",
     "init": "confy-core init --env=development",
     "start": "confy-core start --env=development",
     "build": "confy-core build --env=production",

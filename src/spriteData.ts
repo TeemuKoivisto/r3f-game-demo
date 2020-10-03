@@ -2,7 +2,7 @@ import { SpriteProps } from './@core/Sprite';
 
 const spriteData: { [index: string]: SpriteProps } = {
     ui: {
-        src: './assets/ui.png',
+        src: '/assets/ui.png',
         sheet: {
             'self-select': [
                 [4, 0],
@@ -14,7 +14,7 @@ const spriteData: { [index: string]: SpriteProps } = {
         },
     },
     player: {
-        src: './assets/player.png',
+        src: '/assets/player.png',
         frameWidth: 20,
         frameHeight: 20,
         frameTime: 300,
@@ -31,7 +31,7 @@ const spriteData: { [index: string]: SpriteProps } = {
         },
     },
     objects: {
-        src: './assets/objects.png',
+        src: '/assets/objects.png',
         frameWidth: 20,
         frameHeight: 20,
         sheet: {
@@ -46,7 +46,7 @@ const spriteData: { [index: string]: SpriteProps } = {
         },
     },
     footstep: {
-        src: './assets/footstep.png',
+        src: '/assets/footstep.png',
         sheet: {
             default: [
                 [0, 0],
